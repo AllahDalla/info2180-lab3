@@ -21,7 +21,14 @@ window.onload = function() {
                 console.log("I have been clicked for X");
                 tracker.push("X");
             }
-        });  
+        });
+        gameboard[i].addEventListener('mouseover', function(e){
+            e.target.className += " hover";
+        });
+        gameboard[i].addEventListener('mouseout', function(e){
+            e.target.classList.remove("hover");
+        });
+
     };
 };   
   
